@@ -1,0 +1,280 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.img{
+    max-width:100%;
+    height:auto;
+}
+.wrap{
+    max-width:1002px;
+    margin:0 auto;
+  }
+
+.fanpage{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background:#f6f6f6; 
+    padding: 5px;  
+}
+#twitter{
+      color:#62c8f0;
+}
+#fb{
+      color:#5474ab;
+}
+.fanpage a{
+    text-decoration: none;
+    font-size: 15px;
+    margin-right:10px;
+}
+.fanpage a:hover{
+    font-size:larger;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.hexlogo a{
+    display:block;
+    background-image:url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+    width:240px;
+    height:50px;
+    text-indent:101%; /*文字首行縮排*/
+    overflow:hidden; /*超出div父元素部分隱藏起來*/
+    white-space:nowrap; /*阻止換行*/
+}
+.navbar ul{
+    display:flex;
+    margin:10px 20px 0px 0px;
+}
+.navbar li{
+    margin-left:50px;
+}
+.navbarhover a {
+    position: relative;
+    color:#00cc99;
+    text-decoration: none;
+    font-size: 20px;
+}
+/*特效是抄的，要再研究*/
+.navbarhover a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 0px;
+    background-color: #00cc99;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}  
+.navbarhover a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.banner {
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
+    height:300px;
+    display: flex;
+    align-items: center;
+}
+  .banner__title {
+    width: 100%;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 32px;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+.banner__title .bg-black {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.card{
+    display:flex;
+    justify-content:space-around;
+}
+/*要研究*/
+.cardbox{
+    width:28%;
+    text-align:center;
+    margin-top:90px;
+    padding:10px;
+    border-radius:4px;
+    border:1px;
+    border-style:none solid solid solid;
+    border-color: transparent #f5f6fa #f5f6fa #f5f6fa;
+    box-shadow: 0px 10px 10px -10px #d6d6d6;
+    transition: 0.7s;
+    cursor: pointer;
+}
+.cardbox h3{
+    font-size:20px;
+    font-weight: bold;
+    margin-bottom:10px;
+}
+.cardbox h4,p,li{
+    text-align: left;
+    line-height: 1.4;
+}
+.cardbox li{
+    list-style:disc;
+    margin-left:30px;
+ }
+.cardbox:hover{
+    box-shadow: 10px 15px 15px -10px #d6d6d6;
+ }
+.card img{
+    width:100%;
+}
+.table_head{
+    text-align:center;
+    margin-top:60px;
+    font-weight: bold;
+    font-size:20px;
+ }
+.table{
+    margin:0 auto;
+    margin-top:30px;
+    width:845px;
+ }
+.table th,td{
+    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+    padding:10px;
+}
+.table th{
+    font-weight: bold;
+    background:#f7f7f7;
+    text-align:left;
+}
+.green{
+    color: #55c4a5;
+}
+.information{
+    width:100%;
+    background:linear-gradient(#00644b,#009872);
+    margin-top:60px;
+}
+.information h2{
+    color:white;
+    line-height: 1.4;
+    font-size: 20px;
+    padding-top:35px;
+    margin-bottom:30px;
+    text-align: center;
+}
+.formoftwo{
+    display:flex;
+    padding:0px 20px;
+}
+.formoftwo textarea{
+    width:460px;
+    height:240px;
+    padding-bottom:30px;
+}
+.personal{
+    display:flex;
+    flex-direction:column;
+    margin:0px 25px 0px auto;  
+}
+.personal input{
+    width:400px;
+    padding:10px;
+    border-radius:4px;
+    border:none;
+    margin-bottom:35px;
+}
+.personal label{
+    color:white;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+.personal .btn{
+    background: #00cc99;
+    color:white;
+    border-radius: 4px;
+    border:none;
+    margin-left:auto;
+    margin-bottom:30px;
+    width:70px;
+}
+.btn:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor:pointer;
+}
+ 
+.footer{
+      display:flex;
+      justify-content: space-between;
+  }
+.footer img{
+      height:37px;
+      width:171px;
+      margin-left:25px;
+      margin:30px 0px 0px 25px;
+}
+.footer ul{
+      margin-right:25px;
+      margin-top:30px;
+      padding-bottom:64px;
+ }
+.pink{
+    color:#eb73aa;
+ }
