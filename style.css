@@ -120,6 +120,8 @@ table {
     transform-origin: left;
     transform: scaleX(1);
 }
+
+
 .banner {
     background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
     height:300px;
@@ -278,3 +280,41 @@ table {
 .pink{
     color:#eb73aa;
  }
+ /*RWD*/
+ @media screen and (max-width:627px){
+    .navbar ul{
+        display: none;      
+    }
+}
+@media screen and (max-width:1001px){
+    .card{
+        display:flex;
+        flex-direction:column; 
+        align-items: center;    
+    }
+    .cardbox{
+        width:48%;
+        text-align: center; 
+    }
+    .cardbox p{
+        text-align: center; 
+        display: inline-block;   
+    }
+
+    .table_head, .table{
+        width:94%;
+    }
+    .formoftwo{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .personal{
+        margin:30px 0 0 0;
+    }
+    .personal .btn{
+        margin:0 auto 30px auto;
+    }
+}
+
+
